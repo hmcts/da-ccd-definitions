@@ -1,0 +1,32 @@
+[
+  {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "C100",
+    "UserRole": "caseworker-da-courtadmin",
+    "CRUD": "CRU"
+  },
+  {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "C100",
+    "UserRole": "caseworker-da-solicitor",
+    "CRUD": "CRU"
+  },
+  {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "C100",
+    "UserRole": "caseworker-da-judge",
+    "CRUD": "RU"
+  },
+  {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "C100",
+    "UserRole": "caseworker-da-la",
+    "CRUD": "RU"
+  },
+  {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "C100",
+    "UserRole": "caseworker-da-superuser",
+    "CRUD": "CRU"
+  }
+]
