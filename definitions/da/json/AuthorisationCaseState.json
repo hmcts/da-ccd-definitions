@@ -1,0 +1,37 @@
+[
+  {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "C100",
+    "CaseStateID": "AWAITING_SUBMISSION_TO_HMCTS",
+    "UserRole": "caseworker-da-courtadmin",
+    "CRUD": "CRU"
+  },
+  {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "C100",
+    "CaseStateID": "AWAITING_SUBMISSION_TO_HMCTS",
+    "UserRole": "caseworker-da-solicitor",
+    "CRUD": "CRU"
+  },
+  {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "C100",
+    "CaseStateID": "AWAITING_SUBMISSION_TO_HMCTS",
+    "UserRole": "caseworker-da-judge",
+    "CRUD": "R"
+  },
+  {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "C100",
+    "CaseStateID": "AWAITING_SUBMISSION_TO_HMCTS",
+    "UserRole": "caseworker-da-la",
+    "CRUD": "R"
+  },
+  {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "C100",
+    "CaseStateID": "AWAITING_SUBMISSION_TO_HMCTS",
+    "UserRole": "caseworker-da-superuser",
+    "CRUD": "R"
+  }
+]
