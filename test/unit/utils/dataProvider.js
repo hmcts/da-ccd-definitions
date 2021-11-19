@@ -1,8 +1,8 @@
-const load = require
+const load = require;
 
 const loadFile = file => {
-  return Object.assign(load(`../../../definitions/da/json/${file}.json`), [])
-}
+  return Object.assign(load(`../../../definitions/da/json/${file}.json`), []);
+};
 
 module.exports = {
   ccdData: {
@@ -25,4 +25,4 @@ module.exports = {
     WorkBasketInputFields: loadFile('WorkBasketInputFields'),
     WorkBasketResultFields: loadFile('WorkBasketResultFields')
   }
-}
+};

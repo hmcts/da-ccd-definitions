@@ -44,11 +44,11 @@
     "test:a11y": "echo test:a11y",
     "test:smoke": "echo smoke",
     "codeceptjs": "node $NODE_DEBUG_OPTION ./node_modules/.bin/codeceptjs --verbose",
-    "test:functional": "codeceptjs run --steps -c test/functional/codecept.conf.js",
-    "test:fullfunctional": "codeceptjs run --steps -c test/end-to-end/codecept.conf.js",
+    "test:functional": "echo add functional tests && exit 0",
+    "test:fullfunctional": "echo add e2e tests && exit 0",
     "start": "node index.js",
     "sonar-scan": "node_modules/sonar-scanner/bin/sonar-scanner",
-    "generate-json": "yarn --cwd ccd-definition-processor xlsx2json -D ../definitions/da/json -i ../definitions/daeslin/xlsx/ccd-config-base.xlsx && pretty-quick --pattern 'definitions/**/json/**.json'",
+    "generate-json": "yarn --cwd ccd-definition-processor xlsx2json -D ../definitions/da/json -i ../definitions/da/xlsx/ccd-config-base.xlsx && pretty-quick --pattern 'definitions/**/json/**.json'",
     "generate-excel-local": "TARGET_ENV=local CCD_DEF_COS_URL=$npm_package_config_local_cosUrl CCD_DEF_CCD_URL=$npm_package_config_local_ccdUrl yarn run generate-excel -e *-prod.json",
     "generate-excel-demo": "TARGET_ENV=demo CCD_DEF_COS_URL=$npm_package_config_demo_cosUrl CCD_DEF_CCD_URL=$npm_package_config_demo_ccdUrl yarn run generate-excel -e *-prod.json",
     "generate-excel-aat": "TARGET_ENV=aat CCD_DEF_COS_URL=$npm_package_config_aat_cosUrl CCD_DEF_CCD_URL=$npm_package_config_aat_ccdUrl yarn run generate-excel -e *-prod.json",
@@ -58,6 +58,9 @@
     "generate-excel": "yarn --cwd ccd-definition-processor json2xlsx -D ../definitions/da/json -o ../definitions/da/xlsx/ccd-config-${TARGET_ENV:-base}-${GIT_COMMIT:-locally-generated}.xlsx",
     "generate-excel-all": "yarn generate-excel-local && yarn generate-excel-aat && yarn generate-excel-demo && yarn generate-excel-ithc && yarn generate-excel-perftest && yarn generate-excel-prod"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "@hmcts/nodejs-healthcheck": "1.7.0",
     "@hmcts/properties-volume": "0.0.9",
@@ -71,16 +74,9 @@
   },
   "devDependencies": {
     "@hmcts/eslint-config": "^1.4.0",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
     "chai": "^4.2.0",
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint": "^5.16.0",
     "eslint-plugin-mocha": "^5.3.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1",
-    "eslint-plugin-react": "^7.27.0",
     "husky": "^2.2.0",
     "lodash": "^4.17.21",
     "mocha": "^8.1.1",

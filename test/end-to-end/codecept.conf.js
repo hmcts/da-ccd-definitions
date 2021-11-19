@@ -20,4 +20,4 @@ exports.config = {
   bootstrap: null,
   mocha: {},
   name: 'da-ccd-definitions'
-}
+};

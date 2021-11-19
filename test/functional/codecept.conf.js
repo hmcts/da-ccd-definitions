@@ -12,4 +12,4 @@ exports.config = {
   bootstrap: null,
   mocha: {},
   name: 'div-ccd-definitions'
-}
+};

@@ -1,100 +1,100 @@
-const load = require
-const { sortBy, uniqBy, map } = require('lodash')
-const { expect } = require('chai')
+const load = require;
+const { sortBy, uniqBy, map } = require('lodash');
+const { expect } = require('chai');
 
-const SHORT_STRING = 30
-const MEDIUM_STRING = 70
-const LONG_STRING = 100
+const SHORT_STRING = 30;
+const MEDIUM_STRING = 70;
+const LONG_STRING = 100;
 
-function isFieldDuplicated (field) {
-  return function isDuplicated (field1, field2) {
+function isFieldDuplicated(field) {
+  return function isDuplicated(field1, field2) {
     return field1.CaseTypeID === field2.CaseTypeID &&
             field1[field] === field2[field] &&
-            field1.UserRole === field2.UserRole
-  }
+            field1.UserRole === field2.UserRole;
+  };
 }
 
-function isNotEmpty () {
+function isNotEmpty() {
   return v => {
-    return v !== null && v.length > 0
-  }
+    return v !== null && v.length > 0;
+  };
 }
 
-function isNotLongerThan (maxLength) {
+function isNotLongerThan(maxLength) {
   return v => {
-    return v !== null && v.length > 0 && v.length <= maxLength
-  }
+    return v !== null && v.length > 0 && v.length <= maxLength;
+  };
 }
 
-function isPositiveNumber () {
+function isPositiveNumber() {
   return v => {
-    return typeof v === 'number' && v > 0
-  }
+    return typeof v === 'number' && v > 0;
+  };
 }
 
-function whenPopulated (key, type) {
-  const myType = type || 'string'
+function whenPopulated(key, type) {
+  const myType = type || 'string';
   return {
     expect: satisfyCallback => {
       if (key) {
-        expect(key).to.be.a(myType).and.satisfy(satisfyCallback)
+        expect(key).to.be.a(myType).and.satisfy(satisfyCallback);
       }
     }
-  }
+  };
 }
 
-function noDuplicateFound (a, b) {
-  return a.CaseTypeID === b.CaseTypeID && a.ID === b.ID
+function noDuplicateFound(a, b) {
+  return a.CaseTypeID === b.CaseTypeID && a.ID === b.ID;
 }
 
-function loadAllFiles (location) {
-  return function loadFeatureFiles (featureFiles) {
-    let definitions = []
+function loadAllFiles(location) {
+  return function loadFeatureFiles(featureFiles) {
+    let definitions = [];
 
     featureFiles.forEach(featureFile => {
       definitions = definitions
-        .concat(load(`definitions/divorce/json/${location}/${featureFile}.json`))
-    })
+        .concat(load(`definitions/divorce/json/${location}/${featureFile}.json`));
+    });
 
-    return definitions
-  }
+    return definitions;
+  };
 }
 
-function sortCaseTypeTabs (caseTypeTab) {
+function sortCaseTypeTabs(caseTypeTab) {
   return sortBy(caseTypeTab, tab => {
-    return tab.TabDisplayOrder
-  })
+    return tab.TabDisplayOrder;
+  });
 }
 
-function getUniqValues (objectArray, property) {
+function getUniqValues(objectArray, property) {
   return map(uniqBy(objectArray, property), obj => {
-    return obj[property]
-  })
+    return obj[property];
+  });
 }
 
-function byCaseType (caseType) {
+function byCaseType(caseType) {
   return entry => {
-    return entry.CaseTypeID === caseType
-  }
+    return entry.CaseTypeID === caseType;
+  };
 }
 
-function byStateName (stateEntry) {
+function byStateName(stateEntry) {
   return stateAuth => {
-    return stateAuth.CaseStateID === stateEntry.ID
-  }
+    return stateAuth.CaseStateID === stateEntry.ID;
+  };
 }
 
-function mapErrorArray (caseType) {
+function mapErrorArray(caseType) {
   return entry => {
     return {
       UserRole: entry.UserRole,
       CaseType: caseType
-    }
-  }
+    };
+  };
 }
 
-function missingAuthorisationsExist (missingAuthCount) {
-  return missingAuthCount > 0
+function missingAuthorisationsExist(missingAuthCount) {
+  return missingAuthCount > 0;
 }
 
 module.exports = {
@@ -114,4 +114,4 @@ module.exports = {
   byStateName,
   mapErrorArray,
   missingAuthorisationsExist
-}
+};

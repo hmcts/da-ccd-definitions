@@ -1,4 +1,4 @@
-const I = actor()
+const I = actor();
 
 module.exports = {
 
@@ -9,35 +9,35 @@ module.exports = {
     submit: 'button[type="submit"]'
   },
 
-  async clickCreateCase () {
-    I.wait('1')
-    await I.waitForText('Create case')
-    I.wait('5')
-    await I.click('Accept analytics cookies')
-    I.wait('5')
-    await I.click('Create case')
+  async clickCreateCase() {
+    I.wait('1');
+    await I.waitForText('Create case');
+    I.wait('5');
+    await I.click('Accept analytics cookies');
+    I.wait('5');
+    await I.click('Create case');
   },
 
-  async fillFormAndSubmit () {
-    await I.waitForElement(this.fields.jurisdiction)
-    await I.selectOption(this.fields.jurisdiction, 'Domestic Abuse')
-    await I.selectOption(this.fields.caseType, 'C100 Application')
-    await I.selectOption(this.fields.event, 'Solicitor application')
-    await I.waitForClickable(this.fields.submit)
-    await I.click(this.fields.submit)
+  async fillFormAndSubmit() {
+    await I.waitForElement(this.fields.jurisdiction);
+    await I.selectOption(this.fields.jurisdiction, 'Domestic Abuse');
+    await I.selectOption(this.fields.caseType, 'C100 Application');
+    await I.selectOption(this.fields.event, 'Solicitor application');
+    await I.waitForClickable(this.fields.submit);
+    await I.click(this.fields.submit);
   },
 
-  async fillSolicitorApplicationPage () {
-    await I.waitForElement('#ApplicantCaseName')
-    await I.fillField('//input[@id="ApplicantCaseName"]', 'Test Child')
-    await I.click('Continue')
+  async fillSolicitorApplicationPage() {
+    await I.waitForElement('#ApplicantCaseName');
+    await I.fillField('//input[@id="ApplicantCaseName"]', 'Test Child');
+    await I.click('Continue');
   },
 
-  async createNewCase () {
-    await this.clickCreateCase()
-    await this.fillFormAndSubmit()
-    await this.fillSolicitorApplicationPage()
-    await I.submitEvent()
-    await I.amOnHistoryPageWithSuccessNotification()
+  async createNewCase() {
+    await this.clickCreateCase();
+    await this.fillFormAndSubmit();
+    await this.fillSolicitorApplicationPage();
+    await I.submitEvent();
+    await I.amOnHistoryPageWithSuccessNotification();
   }
-}
+};

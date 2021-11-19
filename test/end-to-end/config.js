@@ -1,4 +1,4 @@
-const defaultPassword = 'Nagoya0102'
+const defaultPassword = 'Nagoya0102';
 
 module.exports = {
   legalProfessionalUserOne: {
@@ -7,4 +7,4 @@ module.exports = {
   },
 
   baseUrl: process.env.URL || 'https://manage-case.aat.platform.hmcts.net/cases'
-}
+};
