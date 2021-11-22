@@ -1,5 +1,3 @@
-const defaultPassword = 'Nagoya0102';
-
 module.exports = {
   legalProfessionalUserOne: {
     email: 'da_caseworker_solicitor@mailinator.com',
