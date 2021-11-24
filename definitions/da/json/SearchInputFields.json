@@ -1,16 +1,16 @@
 [
   {
-    "LiveFrom": "01/07/2021",
-    "CaseTypeID": "C100",
+    "LiveFrom": "15/11/2021",
+    "CaseTypeID": "FL401",
     "CaseFieldID": "ApplicantName",
     "Label": "Applicant name",
     "DisplayOrder": 1
   },
   {
-    "LiveFrom": "01/07/2021",
-    "CaseTypeID": "C100",
-    "CaseFieldID": "ChildName",
-    "Label": "Child name",
+    "LiveFrom": "15/11/2021",
+    "CaseTypeID": "FL401",
+    "CaseFieldID": "RespondentName",
+    "Label": "Respondent Name",
     "DisplayOrder": 2
   }
 ]
