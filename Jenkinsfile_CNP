@@ -71,7 +71,7 @@ withPipeline("nodejs", product, component) {
   before('functionalTest:aat') {
     yarnBuilder.yarn('setup')
 
-    stageWithAgent('Generate Domestic Abuse Case config', product) {
+    stageWithAgent('Generate DA Case config', product) {
       yarnBuilder.yarn('generate-excel-all')
     }
 

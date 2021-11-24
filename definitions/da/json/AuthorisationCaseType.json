@@ -1,31 +1,43 @@
 [
   {
-    "LiveFrom": "01/07/2021",
-    "CaseTypeID": "C100",
+    "LiveFrom": "15/11/2021",
+    "CaseTypeID": "FL401",
+    "UserRole": "caseworker-da",
+    "CRUD": "R"
+  },
+  {
+    "LiveFrom": "15/11/2021",
+    "CaseTypeID": "FL401",
     "UserRole": "caseworker-da-courtadmin",
     "CRUD": "CRU"
   },
   {
-    "LiveFrom": "01/07/2021",
-    "CaseTypeID": "C100",
+    "LiveFrom": "15/11/2021",
+    "CaseTypeID": "FL401",
     "UserRole": "caseworker-da-solicitor",
     "CRUD": "CRU"
   },
   {
-    "LiveFrom": "01/07/2021",
-    "CaseTypeID": "C100",
+    "LiveFrom": "15/11/2021",
+    "CaseTypeID": "FL401",
+    "UserRole": "caseworker-da-caseworker",
+    "CRUD": "CRU"
+  },
+  {
+    "LiveFrom": "15/11/2021",
+    "CaseTypeID": "FL401",
     "UserRole": "caseworker-da-judge",
     "CRUD": "RU"
   },
   {
-    "LiveFrom": "01/07/2021",
-    "CaseTypeID": "C100",
+    "LiveFrom": "15/11/2021",
+    "CaseTypeID": "FL401",
     "UserRole": "caseworker-da-la",
     "CRUD": "RU"
   },
   {
-    "LiveFrom": "01/07/2021",
-    "CaseTypeID": "C100",
+    "LiveFrom": "15/11/2021",
+    "CaseTypeID": "FL401",
     "UserRole": "caseworker-da-superuser",
     "CRUD": "CRU"
   }
