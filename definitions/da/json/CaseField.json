@@ -1,5 +1,13 @@
 [
   {
+    "LiveFrom": "01/07/2021",
+    "CaseTypeID": "FL401",
+    "ID": "CaseHistory",
+    "Label": "History",
+    "FieldType": "CaseHistoryViewer",
+    "SecurityClassification": "Public"
+  },
+  {
     "LiveFrom": "15/11/2021",
     "CaseTypeID": "FL401",
     "ID": "OrdersApplyingFor",

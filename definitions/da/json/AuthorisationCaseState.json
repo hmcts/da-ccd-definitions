@@ -10,13 +10,6 @@
     "LiveFrom": "15/11/2021",
     "CaseTypeID": "FL401",
     "CaseStateID": "AWAITING_SUBMISSION_TO_HMCTS",
-    "UserRole": "caseworker-da-caseworker",
-    "CRUD": "CRU"
-  },
-  {
-    "LiveFrom": "15/11/2021",
-    "CaseTypeID": "FL401",
-    "CaseStateID": "AWAITING_SUBMISSION_TO_HMCTS",
     "UserRole": "caseworker-da-solicitor",
     "CRUD": "CRU"
   },

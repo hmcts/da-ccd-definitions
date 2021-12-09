@@ -2,7 +2,7 @@
   {
     "LiveFrom": "15/11/2021",
     "UserIDAMId": "da_caseworker_solicitor@mailinator.com",
-    "WorkBasketDefaultJurisdiction": "DA",
+    "WorkBasketDefaultJurisdiction": "DOMESTICABUSE",
     "WorkBasketDefaultCaseType": "FL401",
     "WorkBasketDefaultState": "AWAITING_SUBMISSION_TO_HMCTS"
   }

@@ -2,15 +2,8 @@
   {
     "LiveFrom": "15/11/2021",
     "CaseTypeID": "FL401",
-    "CaseFieldID": "ApplicantName",
+    "CaseFieldID": "ApplicantCaseName",
     "Label": "Applicant name",
     "DisplayOrder": 1
-  },
-  {
-    "LiveFrom": "15/11/2021",
-    "CaseTypeID": "FL401",
-    "CaseFieldID": "RespondentName",
-    "Label": "Respondent Name",
-    "DisplayOrder": 2
   }
 ]
