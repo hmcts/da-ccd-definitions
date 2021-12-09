@@ -20,12 +20,6 @@
   {
     "LiveFrom": "15/11/2021",
     "CaseTypeID": "FL401",
-    "UserRole": "caseworker-da-caseworker",
-    "CRUD": "CRU"
-  },
-  {
-    "LiveFrom": "15/11/2021",
-    "CaseTypeID": "FL401",
     "UserRole": "caseworker-da-judge",
     "CRUD": "RU"
   },

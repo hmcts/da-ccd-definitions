@@ -45,13 +45,6 @@
     "LiveFrom": "15/11/2021",
     "CaseTypeID": "FL401",
     "CaseEventID": "selectApplicationType",
-    "UserRole": "caseworker-da-caseworker",
-    "CRUD": "CRU"
-  },
-  {
-    "LiveFrom": "15/11/2021",
-    "CaseTypeID": "FL401",
-    "CaseEventID": "selectApplicationType",
     "UserRole": "caseworker-da-solicitor",
     "CRUD": "CRU"
   },
@@ -74,13 +67,6 @@
     "CaseTypeID": "FL401",
     "CaseEventID": "selectApplicationType",
     "UserRole": "caseworker-da-superuser",
-    "CRUD": "R"
-  },
-  {
-    "LiveFrom": "15/11/2021",
-    "CaseTypeID": "FL401",
-    "CaseEventID": "selectApplicationType",
-    "UserRole": "caseworker-da-caseworker",
     "CRUD": "R"
   }
 ]
