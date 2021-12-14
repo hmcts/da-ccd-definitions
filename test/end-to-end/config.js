@@ -31,9 +31,9 @@ module.exports = {
 
   definition: {
     jurisdiction: 'PRIVATELAW',
-    jurisdictionFullDesc: 'Family Private Law',
+    jurisdictionFullDesc: 'TBC',
     caseType: 'TBC',
-    caseTypeFullDesc: 'C100 Application',
+    caseTypeFullDesc: '401 Application',
   },
 
   baseUrl: process.env.URL || 'https://manage-case.aat.platform.hmcts.net/cases'
