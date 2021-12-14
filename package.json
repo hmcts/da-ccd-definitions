@@ -42,7 +42,7 @@
     "test": "NODE_PATH=. mocha test/unit/definitions/**/*.js",
     "test:coverage": "echo test:coverage",
     "test:a11y": "echo test:a11y",
-    "test:smoke": "echo smoke",
+    "test:smoke": "codeceptjs run --steps -c test/smoke/codecept.conf.js",
     "codeceptjs": "node $NODE_DEBUG_OPTION ./node_modules/.bin/codeceptjs --verbose",
     "test:functional": "codeceptjs run --steps -c test/functional/codecept.conf.js",
     "test:fullfunctional": "codeceptjs run --steps -c test/end-to-end/codecept.conf.js",
